@@ -14,6 +14,7 @@
 		15D4725B2934F6EE00FD687A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D4725A2934F6EE00FD687A /* Assets.xcassets */; };
 		15D4725E2934F6EE00FD687A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D4725C2934F6EE00FD687A /* LaunchScreen.storyboard */; };
 		15D472612934F6EE00FD687A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D472602934F6EE00FD687A /* main.m */; };
+		15D4726A2934FF9600FD687A /* Diary.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D472692934FF9600FD687A /* Diary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		15D4725D2934F6EE00FD687A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15D4725F2934F6EE00FD687A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15D472602934F6EE00FD687A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15D472682934FF9600FD687A /* Diary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Diary.h; sourceTree = "<group>"; };
+		15D472692934FF9600FD687A /* Diary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Diary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		15D4724D2934F6EC00FD687A /* AnimalDiary */ = {
 			isa = PBXGroup;
 			children = (
+				15D472672934FF6100FD687A /* Model */,
 				15D4724E2934F6EC00FD687A /* AppDelegate.h */,
 				15D4724F2934F6EC00FD687A /* AppDelegate.m */,
 				15D472512934F6EC00FD687A /* SceneDelegate.h */,
@@ -74,6 +78,15 @@
 				15D472602934F6EE00FD687A /* main.m */,
 			);
 			path = AnimalDiary;
+			sourceTree = "<group>";
+		};
+		15D472672934FF6100FD687A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15D472682934FF9600FD687A /* Diary.h */,
+				15D472692934FF9600FD687A /* Diary.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 				15D472502934F6EC00FD687A /* AppDelegate.m in Sources */,
 				15D472612934F6EE00FD687A /* main.m in Sources */,
 				15D472532934F6EC00FD687A /* SceneDelegate.m in Sources */,
+				15D4726A2934FF9600FD687A /* Diary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,14 +306,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 36GP448SZT;
+				DEVELOPMENT_TEAM = 99342AF2VV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AnimalDiary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AnimalDiary;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +324,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.younghwani.AnimalDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,14 +339,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 36GP448SZT;
+				DEVELOPMENT_TEAM = 99342AF2VV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AnimalDiary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AnimalDiary;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,8 +357,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.younghwani.AnimalDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
