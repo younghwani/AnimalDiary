@@ -19,6 +19,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    NSLog(@"%lu", (unsigned long)[[Diary dummyDiaryList] count]);
+    
     [self.tableView reloadData];
 }
 

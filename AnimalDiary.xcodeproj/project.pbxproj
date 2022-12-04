@@ -17,6 +17,7 @@
 		15D4726A2934FF9600FD687A /* Diary.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D472692934FF9600FD687A /* Diary.m */; };
 		15D4726D2935017E00FD687A /* DiaryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D4726C2935017E00FD687A /* DiaryListTableViewController.m */; };
 		15D47270293C9D5000FD687A /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D4726F293C9D5000FD687A /* ComposeViewController.m */; };
+		15D47273293CAA1F00FD687A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D47272293CAA1F00FD687A /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		15D4726C2935017E00FD687A /* DiaryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryListTableViewController.m; sourceTree = "<group>"; };
 		15D4726E293C9D5000FD687A /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
 		15D4726F293C9D5000FD687A /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		15D47271293CAA1F00FD687A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		15D47272293CAA1F00FD687A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				15D472602934F6EE00FD687A /* main.m */,
 				15D4726E293C9D5000FD687A /* ComposeViewController.h */,
 				15D4726F293C9D5000FD687A /* ComposeViewController.m */,
+				15D47271293CAA1F00FD687A /* DetailViewController.h */,
+				15D47272293CAA1F00FD687A /* DetailViewController.m */,
 			);
 			path = AnimalDiary;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				15D472562934F6EC00FD687A /* ViewController.m in Sources */,
 				15D4726D2935017E00FD687A /* DiaryListTableViewController.m in Sources */,
 				15D472502934F6EC00FD687A /* AppDelegate.m in Sources */,
+				15D47273293CAA1F00FD687A /* DetailViewController.m in Sources */,
 				15D472612934F6EE00FD687A /* main.m in Sources */,
 				15D47270293C9D5000FD687A /* ComposeViewController.m in Sources */,
 				15D472532934F6EC00FD687A /* SceneDelegate.m in Sources */,
