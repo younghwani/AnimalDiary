@@ -64,17 +64,38 @@
             </objects>
             <point key="canvasLocation" x="343" y="94"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--다이어리 보기-->
         <scene sceneID="nXM-gQ-lrC">
             <objects>
                 <viewController id="ota-Xq-fFr" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DN8-Rv-4sw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10C-9y-kE8">
+                                <rect key="frame" x="0.0" y="729" width="375" height="49"/>
+                                <items>
+                                    <barButtonItem title="Item" id="MkZ-GI-GyV"/>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ITO-It-0Be">
+                                <rect key="frame" x="0.0" y="143" width="375" height="586"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VsD-GX-RHf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ITO-It-0Be" firstAttribute="leading" secondItem="VsD-GX-RHf" secondAttribute="leading" id="5kp-Mz-YbA"/>
+                            <constraint firstItem="10C-9y-kE8" firstAttribute="bottom" secondItem="VsD-GX-RHf" secondAttribute="bottom" id="C4t-Qg-hMf"/>
+                            <constraint firstItem="10C-9y-kE8" firstAttribute="trailing" secondItem="VsD-GX-RHf" secondAttribute="trailing" id="N9B-da-j0o"/>
+                            <constraint firstItem="10C-9y-kE8" firstAttribute="leading" secondItem="VsD-GX-RHf" secondAttribute="leading" id="U1I-Cg-Hjs"/>
+                            <constraint firstItem="ITO-It-0Be" firstAttribute="top" secondItem="VsD-GX-RHf" secondAttribute="top" id="ak3-Ix-Sxl"/>
+                            <constraint firstItem="VsD-GX-RHf" firstAttribute="trailing" secondItem="ITO-It-0Be" secondAttribute="trailing" id="eHg-Qe-ujS"/>
+                            <constraint firstItem="10C-9y-kE8" firstAttribute="top" secondItem="ITO-It-0Be" secondAttribute="bottom" id="ebg-mY-sTP"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fKi-Yt-o8f"/>
+                    <navigationItem key="navigationItem" title="다이어리 보기" id="kkp-xK-ZM5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0O-LV-Nlf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
