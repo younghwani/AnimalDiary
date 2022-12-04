@@ -93,8 +93,15 @@
                                 <action selector="close:" destination="m6f-0x-MOA" id="oHu-hx-hBn"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jZ6-Pm-jQg"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jZ6-Pm-jQg">
+                            <connections>
+                                <action selector="save:" destination="m6f-0x-MOA" id="Toi-kb-43F"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="diaryTextView" destination="SS4-vv-qUQ" id="v2E-Jg-yta"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H32-3B-Q0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
