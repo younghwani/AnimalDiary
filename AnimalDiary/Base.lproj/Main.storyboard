@@ -64,7 +64,7 @@
         <!--새 다이어리-->
         <scene sceneID="dUx-1Z-VbX">
             <objects>
-                <viewController id="m6f-0x-MOA" sceneMemberID="viewController">
+                <viewController id="m6f-0x-MOA" customClass="ComposeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tx9-m2-4aH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
