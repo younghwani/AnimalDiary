@@ -88,7 +88,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="새 다이어리" id="PYg-Wt-ZTT">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Mzb-CZ-QTr"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Mzb-CZ-QTr">
+                            <connections>
+                                <action selector="close:" destination="m6f-0x-MOA" id="oHu-hx-hBn"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="jZ6-Pm-jQg"/>
                     </navigationItem>
                 </viewController>
