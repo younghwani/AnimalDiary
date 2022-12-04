@@ -10,12 +10,19 @@
 
 @interface DiaryListTableViewController ()
 
+@property (strong, nonatomic) NSDateFormatter* formatter;
+
 @end
 
 @implementation DiaryListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.formatter = [[NSDateFormatter alloc] init];
+    self.formatter.dateStyle = NSDateFormatterLongStyle;
+    self.formatter.timeStyle = NSDateFormatterNoStyle;
+    self.formatter.locale = [NSLocale localeWithLocaleIdentifier:@"Ko_kr"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -36,7 +43,7 @@
     
     Diary* target = [[Diary dummyDiaryList] objectAtIndex:indexPath.row];
     cell.textLabel.text = target.content;
-    cell.detailTextLabel.text = target.insertDate.description;
+    cell.detailTextLabel.text = [self.formatter stringFromDate:target.insertDate];
     
     return cell;
 }
