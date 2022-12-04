@@ -61,21 +61,40 @@
             </objects>
             <point key="canvasLocation" x="343" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--새 다이어리-->
         <scene sceneID="dUx-1Z-VbX">
             <objects>
                 <viewController id="m6f-0x-MOA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tx9-m2-4aH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SS4-vv-qUQ">
+                                <rect key="frame" x="0.0" y="56" width="393" height="727"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qL9-dw-v8H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SS4-vv-qUQ" firstAttribute="leading" secondItem="qL9-dw-v8H" secondAttribute="leading" id="1sS-Ng-rNU"/>
+                            <constraint firstItem="qL9-dw-v8H" firstAttribute="bottom" secondItem="SS4-vv-qUQ" secondAttribute="bottom" id="FGw-Ng-3EU"/>
+                            <constraint firstItem="qL9-dw-v8H" firstAttribute="trailing" secondItem="SS4-vv-qUQ" secondAttribute="trailing" id="KpN-ax-1B0"/>
+                            <constraint firstItem="SS4-vv-qUQ" firstAttribute="top" secondItem="qL9-dw-v8H" secondAttribute="top" id="gE9-jv-YrW"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PYg-Wt-ZTT"/>
+                    <navigationItem key="navigationItem" title="새 다이어리" id="PYg-Wt-ZTT">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Mzb-CZ-QTr"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jZ6-Pm-jQg"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H32-3B-Q0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2086.2595419847326" y="-571.12676056338034"/>
+            <point key="canvasLocation" x="2084.7328244274809" y="-571.12676056338034"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hp1-U3-aWm">
@@ -113,6 +132,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
