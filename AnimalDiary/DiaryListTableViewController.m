@@ -7,6 +7,7 @@
 
 #import "DiaryListTableViewController.h"
 #import "Diary.h"
+#import "DetailViewController.h"
 
 @interface DiaryListTableViewController ()
 
@@ -15,6 +16,15 @@
 @end
 
 @implementation DiaryListTableViewController
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath* indexPath = [self.tableView indexPathForCell:(UITableViewCell*)sender];
+    if (indexPath != nil) {
+        Diary* target = [[Diary dummyDiaryList] objectAtIndex:indexPath.row];
+        DetailViewController* vc = (DetailViewController*)segue.destinationViewController;
+        vc.diary = target;
+    }
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
